@@ -7,7 +7,7 @@ import Nav from "./components/Nav";
 import data from "./data.json";
 
 function App() {
-  const [isClicked, setIsClicked] = useState(true);
+  const [scrollToIndex, setScrollToIndex] = useState(null);
 
   const formatDate = (dateString: any) => {
     const date = new Date(dateString);
@@ -26,15 +26,15 @@ function App() {
       <SearchBar />
       <div className="flex flex-row space-x-2 w-full px-10">
         <ContentsList
-          className="w-3/4"
           formatDate={formatDate}
           sortedData={sortedData}
-          isClicked={isClicked}
+          scrollToIndex={scrollToIndex}
+          setScrollToIndex={setScrollToIndex}
         />
         <Nav
-          className="w-1/4"
           sortedData={sortedData}
           formatDate={formatDate}
+          setScrollToIndex={setScrollToIndex}
         />
       </div>
     </div>
