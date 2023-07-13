@@ -1,0 +1,48 @@
+{
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.shellArgs.osx": [],
+  "terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exe'MesloLGS NF'",
+  "terminal.integrated.fontFamily": "'MesloLGS NF'",
+  "terminal.integrated.fontSize": 10,
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.png": "hediet.vscode-drawio"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": false,
+  "files.exclude": {
+    "**/ .next": true,
+    "**/ node_modules": true
+  },
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "terminal.external.osxExec": "iTerm.app",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "typescriptreact": "javascript",
+    "css": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 1,
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)", // tw`...`
+    "tw\\.[^`]+`([^`]*)`", // tw.xxx<xxx>`...`
+    "tw\\(.*?\\).*?`([^`]*)" // tw(Component)<xxx>`...`
+  ],
+  "go.alternateTools": {},
+  "liveServer.settings.donotShowInfoMsg": true
+}
