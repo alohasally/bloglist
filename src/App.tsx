@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ContentsList from "./components/ContentsList";
 import SearchBar from "./components/SearchBar";
 import Banner from "./components/Banner";
@@ -11,7 +11,10 @@ function App() {
 
   const formatDate = (dateString: any) => {
     const date = new Date(dateString);
-    return new Intl.DateTimeFormat("ko-KR").format(date);
+    return new Intl.DateTimeFormat("ko-KR")
+      .format(date)
+      .replace(/\./g, "-")
+      .replace(/-$/, "");
   };
 
   const sortedData = [...data].sort((a, b) => {
@@ -19,6 +22,19 @@ function App() {
     const dateB = new Date(a.created).getTime();
     return dateA - dateB;
   });
+
+  // const [data1, setData] = useState([]);
+
+  // useEffect(() => {
+  //   try {
+  //     const { data } = await axios.get('')
+
+  //     const sortedData = sortedData(data)''
+  //   } catch (error) {
+
+  //   }
+  // }, []);
+
   return (
     <div className="">
       <Header />
